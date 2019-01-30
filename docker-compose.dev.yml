@@ -1,0 +1,7 @@
+version: '3'
+
+services: 
+  php:
+    volumes:
+      - ./frontend/vendor:/app/vendor
+      - ./frontend/site:/app/site

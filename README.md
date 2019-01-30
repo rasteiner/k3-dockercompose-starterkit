@@ -23,8 +23,20 @@ You obviously need a working, modern, docker environment set up. You also need P
 
 Notice that the `site` and `vendor` folders get built into the image. If you change something there you have to rebuild with `docker-compose up --build`.
 
+### Development
+During development you might want to mount your working directory into the php container, so you don't need to rebuild for every change.
+A `docker-compose.dev.yml` file is included with the volume instructions. 
+
+For development start `docker-compose` including the file with this command:
+
+```bash
+# in root folder
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+```
+
 ## Next steps / whishlist
-1. Create an alternative version of `docker-compose.yml` that mounts the `site` and `vendor` folders into the container from host, making development easier. 
+1. Optimize: Maybe add a cache service. 
+2. Create a `prod` yml file with instructions about restarts and stuff.
 
 ## Contributions
 I'm not a DevOps guy. I'm sure this setup isn't optimal yet (maybe it's even dangerous). 
