@@ -1,6 +1,8 @@
 ## What
 Kirby 3 starterkit running on docker-compose with nginx connected to php-fpm on a unix socket. 
-Kirby is installed with a custom folder setup so that only the `assets` and `media` folder (and `index.php`) is exposed to nginx. 
+Kirby is installed with a custom folder setup so that only the `assets` and `media` folder (and `index.php`) is exposed to nginx.
+
+The original starterkit is over here: https://github.com/getkirby/starterkit
 
 ## Why 
 As a starting point for such setups. 
