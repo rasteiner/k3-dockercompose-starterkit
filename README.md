@@ -35,8 +35,8 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
 ```
 
 ## Next steps / whishlist
-1. Optimize: Maybe add a cache service. 
-2. Create a `prod` yml file with instructions about restarts and stuff.
+See [the issues](https://github.com/rasteiner/k3-dockercompose-starterkit/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement).
+
 
 ## Contributions
 I'm not a DevOps guy. I'm sure this setup isn't optimal yet (maybe it's even dangerous). 
